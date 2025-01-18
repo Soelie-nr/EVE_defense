@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    background: black;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 40px;
+    width: 80%;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    border: 2px solid #333;
+}
+
+h1 {
+    font-size: 6em;
+    margin-bottom: 80px;
+    color: #4169E1;
+    text-shadow: 0 0 20px rgba(65, 105, 225, 0.7);
+    letter-spacing: 10px;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+.menu-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.menu-button {
+    padding: 20px 60px;
+    font-size: 2em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.play-button {
+    background: #4169E1;
+    color: white;
+    width: 300px;
+    text-align: center;
+}
+
+.options-button {
+    background: transparent;
+    color: #4169E1;
+    border: 2px solid #4169E1;
+    width: 250px;
+    text-align: center;
+}
+
+.play-button:hover {
+    background: #1E90FF;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(65, 105, 225, 0.5);
+}
+
+.options-button:hover {
+    background: rgba(65, 105, 225, 0.1);
+    transform: scale(1.05);
+}
+
+.social-links {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon {
+    color: #4169E1;
+    font-size: 2em;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #1E90FF;
+    transform: scale(1.2);
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 20px rgba(65, 105, 225, 0.7);
+    }
+    to {
+        text-shadow: 0 0 30px rgba(65, 105, 225, 0.9);
+    }
+}
