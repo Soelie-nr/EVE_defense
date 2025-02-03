@@ -26,7 +26,7 @@ h1 {
     font-size: 6em;
     margin-bottom: 80px;
     color: #4169E1;
-    text-shadow: 0 0 20px rgba(65, 105, 225, 0.7);
+    text-shadow: 0 0 20px rgb(24, 0, 96);
     letter-spacing: 10px;
     animation: glow 2s ease-in-out infinite alternate;
 }
@@ -68,6 +68,7 @@ h1 {
     background: #1E90FF;
     transform: scale(1.1);
     box-shadow: 0 0 20px rgba(65, 105, 225, 0.5);
+    
 }
 
 .options-button:hover {
